@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './componets/Header/Navbar';
+import Operations from './componets/Operations/Operations';
+import Transaction from './componets/Transactions/Transaction';
+import { useState } from 'react';
+import Breakdowns from './componets/Breakdown/Breakdowns';
 
 function App() {
+  const [balance,setBalance]=useState(0)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+ <Router>
+      <div className="App">
+        <Navbar balance={balance} />
+        <Routes>
+          <Route path="/" element={<Transaction setBalance={setBalance}  />} />
+          <Route path="/Operations" element={<Operations  />} />
+          <Route path="/Breakdowns" element={<Breakdowns />} />
+
+        </Routes>
+      </div>
+    </Router>    
   );
 }
 

@@ -1,0 +1,56 @@
+.TransactionC {
+    display: grid;
+    grid-template-areas:
+    'a b'
+    'c d';
+    grid-gap: 10px;
+    height: 100px;
+    width:auto;
+    background-color: rgb(198, 186, 210);
+    margin: 30px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(165, 42, 42, 0.75); /* Corrected box-shadow property syntax */
+    text-align: center;
+
+}
+
+.item1 { grid-area: a;
+     margin: 10px;
+    height: 20px;
+    width:auto;
+    border-radius: 3px;
+    
+}
+.item2G { grid-area: b; 
+    margin: 10px;
+    height: 20px;
+    width:auto;
+    border-radius: 3px;
+    background-color: rgb(71, 219, 71);
+}
+.item2R { grid-area: b; 
+    margin: 10px;
+    height: 20px;
+    width:auto;
+    border-radius: 3px;
+    background-color: rgb(218, 68, 68);
+}
+
+.item3 { grid-area: c;
+    margin: 10px;
+    height: 20px;
+    width:auto;
+    border-radius: 3px; 
+    
+}
+.item4 { 
+    grid-area: d;
+    margin: 5px;
+    height: 30px;
+    width:200px;
+    border-radius: 3px;
+    background-color: red;
+    text-align: center;
+
+
+ }

@@ -1,0 +1,33 @@
+.OperationsForm {
+    display: grid;
+    grid-template-columns: repeat(1, 5fr); /* Fix the grid-template-columns property */
+    height: 300px;
+    width: auto;
+    background-color: rgb(198, 186, 210);
+    margin: 30px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px brown; /* Correct the box-shadow property syntax */
+}
+
+#inputFormO{
+    margin: 10px;
+    height: 30px;
+    width:auto;
+    border-radius: 3px;
+}
+
+.buttonFormR{
+    height: 30px;
+
+    width: 100px;
+    background-color: red;
+    margin: 10px;
+    border-radius: 3px;
+}
+.buttonFormG{
+    height: 30px;
+    width: 100px;
+    background-color: green;
+    margin: 10px;
+    border-radius: 3px;
+}
